@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+body{
+    font: 14px/1.9 'Noto Sans JP', Arial, Verdana, æ¸¸ã‚´ã‚·ãƒƒã‚¯, YuGothic,'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', 'Hiragino Kaku Gothic ProN', ãƒ¡ã‚¤ãƒªã‚ª, Meiryo,sans-serif;
+	font-weight: 300;
+    margin: 0px;
+    width:100%;
+    display: flex;
+}
+h1,h2{
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+article{
+    width: 80%;
+    order: 0;
+    
+}
+@media (min-width: 400px){
+nav{
+    order: 1;
+    width:20%;
+}
+nav ul{
+    /*
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    */
+    width:fit-content;
+    position: relative;
+    left:20%;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+nav ul li{
+    width:fit-content;
+}
+nav ul li a{
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+nav ul li a:hover{
+    text-decoration-line: underline;
+}
+}@media (min-width: 100px){
+    
+}
+
+/*本文*/
+section .title{
+    padding: auto;
+    width:auto;
+    height: auto;
+    text-align: center;
+    margin: 70px 0;
+}
+.title a{
+    display: inline-block;
+    align-items: stretch;
+    padding: 5px;
+    border-style: none none solid;
+    font-size: 22px;
+}
+.text{
+    width:60%;
+    margin: 50px auto;
+}
+
+#container ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#container li{
+    flex:0 0 calc(100%/3);
+    
+}
+#container ul #fullWidth{
+    flex:0 0 100%;
+}
+#container li img{
+    width: 100%;
+    height:100%;
+}
+#bland ul{
+    margin:0;
+    padding: 0;
+    list-style:none;
+}
+#bland ul li img{
+    display: block;
+    margin: 50px auto;
+}
+
+#bland ul li p{
+    text-align: center;
+}
+#project div{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width:60%;
+    margin: 0 auto;
+    height:auto;
+    padding-bottom: 50px;
+    overflow: hidden;
+    clear: both;
+}
+
+#project div img{
+    float:left;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}
